@@ -1,0 +1,42 @@
+/* SignUpPage.module.css — Page-level styles for the Sign Up form */
+
+.heading {
+  font-family: var(--font-headline);
+  font-size: 1.75rem;    /* 28px — was 22px */
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ---- Footer / Redirect Link ---- */
+.footer {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;   /* 13px */
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.link {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity var(--transition-base);
+}
+
+.link:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}

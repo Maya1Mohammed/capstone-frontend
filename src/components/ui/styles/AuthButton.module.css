@@ -1,0 +1,48 @@
+/* AuthButton.module.css — Scoped styles for the AuthButton component */
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  height: 54px;
+  padding: 0 24px;
+  margin-top: 8px;
+
+  background: var(--color-primary);
+  color: var(--bg-neutral);
+  color: #0A0F1E;
+
+  font-family: var(--font-label);
+  font-size: 0.75rem;     /* 12px */
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+
+  transition:
+    opacity var(--transition-base),
+    box-shadow var(--transition-glow),
+    transform var(--transition-base);
+}
+
+.btn:hover {
+  opacity: 0.88;
+  box-shadow: 0 0 28px rgba(0, 240, 255, 0.40);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}

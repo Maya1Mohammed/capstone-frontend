@@ -1,0 +1,23 @@
+/* AuthDivider.module.css */
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 4px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background: var(--border-subtle);
+}
+
+.text {
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
